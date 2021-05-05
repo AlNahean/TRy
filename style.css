@@ -1,0 +1,152 @@
+/* Made by --Nahean--
+http://fb.com/AlNahean19 */
+
+
+:root{
+    --clr-neon: hsl(317 100% 54%);
+    --clr-bg: hsl(323 21% 16%);
+    --clr-neonBright: hsl(317 100% 80%);
+    --clr-neonStroke: hsl(317 100% 60%);
+
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    /* background-color: rgb(61, 58, 58); */
+    background-color: var(--clr-bg);
+    color: rgb(235, 224, 194);
+}
+
+/* To center everything */
+.center{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+
+
+  /* to add the animation */
+/* Always use forward to keep the animation last frame forever */
+#eid-mk{
+    padding: 3rem;
+    animation: to-fill 2s ease 7s 1 forwards;
+}
+#eid-mk path{
+   stroke:var(--clr-neon)
+}
+
+
+/* This is magic --:)-- */
+#eid-mk path:nth-child(1){
+    stroke-dasharray: 463.9681396484375;
+stroke-dashoffset: 463.9681396484375;
+animation: eid 5s ease 0.3s 1 forwards;
+}
+
+#eid-mk path:nth-child(2){
+    stroke-dasharray: 226.94400024414062;
+stroke-dashoffset: 226.94400024414062;
+animation: eid 5s ease 0.6s 1 forwards;
+
+}
+
+#eid-mk path:nth-child(3){
+    stroke-dasharray: 571.5774536132812;
+stroke-dashoffset: 571.5774536132812;
+animation: eid 5s ease 0.9s 1 forwards;
+
+}
+#eid-mk path:nth-child(4){
+    stroke-dasharray: 754.92724609375;
+stroke-dashoffset: 754.92724609375;
+animation: eid 5s ease 1.2s 1 forwards;
+
+}
+#eid-mk path:nth-child(5){
+    stroke-dasharray: 483.89263916015625;
+stroke-dashoffset: 483.89263916015625;
+animation: eid 5s ease 1.5s 1 forwards;
+
+}
+#eid-mk path:nth-child(6){
+    stroke-dasharray: 610.2323608398438;
+stroke-dashoffset: 610.2323608398438;
+animation: eid 5s ease 1.8s 1 forwards;
+
+}
+
+#eid-mk path:nth-child(7){
+    stroke-dasharray: 490.2921142578125;
+stroke-dashoffset: 490.2921142578125;
+animation: eid 5s ease 2.1s 1 forwards;
+
+}
+#eid-mk path:nth-child(8){
+    stroke-dasharray: 549.0670166015625;
+stroke-dashoffset: 549.0670166015625;
+animation: eid 5s ease 2.5s 1 forwards;
+
+}
+
+#eid-mk path:nth-child(9){
+    stroke-dasharray: 490.2921447753906;
+stroke-dashoffset: 490.2921447753906;
+animation: eid 5s ease 2.8s 1 forwards;
+
+}
+#eid-mk path:nth-child(10){
+stroke-dasharray: 512.352294921875;
+stroke-dashoffset: 512.352294921875;
+animation: eid 5s ease 3.0s 1 forwards;
+}
+
+
+/* Bottom lines before trhe animations to add margins to the conteiner div which class is center */
+
+
+/* .add-margin path{
+    stroke: var(--clr-neon);
+    fill: var(--clr-neon);
+    border: 1px solid var(--clr-neon);
+    box-shadow: inset 0 0 0.5em var(--clr-neon),0 0 0.5em var(--clr-neon);
+    
+} */
+.add-margin{
+    border: 0.2rem solid var(--clr-neonBright);
+    margin: 3rem;
+    border-radius: 0.5rem;
+    box-shadow: inset 0 0 5rem var(--clr-neon),0 0 5rem var(--clr-neon);
+    transition: all 3s ease;
+}
+
+
+
+/* Animations */
+@keyframes eid {
+    to{
+        stroke-dashoffset: 0;
+        stroke: var(--clr-neonStroke);
+    }
+}
+
+@keyframes to-fill {
+
+    1%{
+        fill: transparent;
+    }
+    99%{
+        fill: var(--clr-neon);
+    }
+    100%{
+        fill: var(--clr-neon);
+        opacity: 0.6;
+    }
+}
