@@ -157,7 +157,7 @@ img{
     overflow: hidden;
 }
 .sync-song-name{
-    font-size: 1.3rem;
+/*     font-size: 1.3rem; */
     justify-self: start;
     align-self: center;
     overflow: hidden;
@@ -166,7 +166,7 @@ img{
     flex-wrap: nowrap;
 }
 .sync-artist-name{
-    font-size: 1.2rem;
+/*     font-size: 1.2rem; */
     color: gray;
     justify-self: start;
     align-self: center;
