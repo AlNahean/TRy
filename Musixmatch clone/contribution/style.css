@@ -88,7 +88,7 @@ body > div{
     /* padding: 0.5rem; */
     display: grid;
     grid-gap: 1rem;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 1fr 4fr;
     height: 50vh;
     justify-content: start;
     align-content: center;
@@ -135,7 +135,7 @@ body > div{
 .sync-song-suggestions-container{
     height: 100%;
     display: grid;
-    grid-template-rows: 3fr 1fr;
+    grid-template-rows: 5fr 2fr;
     padding: 0.5rem;
 }
 
