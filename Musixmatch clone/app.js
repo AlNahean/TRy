@@ -19,7 +19,7 @@ var trackInfo2 = [
         album: "",
         artist: "Will Gittens",
         albumArtist: "",
-        img: '../Musix Album Cover/Forget About You.jpg',
+        img: '..Musixmatch clone/Musix Album Cover/Forget About You.jpg',
         year: "",
         disc: "",
         track: "",
