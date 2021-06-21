@@ -1,0 +1,328 @@
+:root{
+    --clr-fill: rgb(0, 0, 0);
+    --clr-fillBig: rgb(238, 230, 230);
+    --clr-Stroke: rgb(0, 0, 0);
+    --clr-StrokeBig: rgb(238, 230, 230);
+}
+
+/* img:hover{
+    transform:  scale(0.95);
+} */
+
+::-webkit-scrollbar{
+    display: none;
+}
+*{
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+/* img{
+    border: 0px solid black;
+} */
+body{
+    background-color: black;
+}
+.start-header-container{
+    display: grid;
+    grid-template-columns: 8fr 1fr;
+    align-content: center;
+
+    position: fixed;
+    height: 5vh;
+    background-color: black;
+}
+.home{
+    color: hsl(24, 85%, 40%);
+    font-size: 3vh;
+    /* transform: translateX(4vw); */
+}
+
+/* Bottom */
+.bottom{
+    height: 17vh;
+    position: fixed;
+    bottom: 0vh;
+    background-color: black;
+    margin-bottom: 0px;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+.now-play-home{
+    height: 6vh;
+    padding-top: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    align-content: center;
+}
+.home-current-play-track-cover{
+    background: url("forget About You.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px;
+}
+.home-current-play-track-info{
+    display: grid;
+    grid-template-rows:1fr 1fr;
+    justify-content: start;
+    align-content: space-around;
+    margin-left: 0.5rem;
+}
+.home-current-play-track-name{
+    font-size: 1.2rem;
+}
+.home-current-play-track-artist{
+    font-size: 1rem;
+    color: gray;
+}
+.home-current-play-track-play-or-pause{
+    justify-self: center;
+    align-self: center;
+}
+
+
+
+.navigation{
+    height: 10vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+}
+.navigation > div{
+    justify-self: center;
+}
+.navigation > div:hover{
+    color: red;
+    font-weight: bolder;
+}
+.last{
+    height: 10vh;
+}
+.home-container{
+    display: flex;
+    /* flex-direction: column-reverse; */
+    /* background-color: blanchedalmond; */
+}
+.home-main{
+    display: flex;
+    flex-direction: column;
+}
+.h-dummy{
+    height: 5vh;
+    width: 100vw;
+    background-color: black;
+}
+/* Recomendation */
+.feature-recomandation{
+    height: 40vh;
+}
+.recomandation-container{
+
+    height: 40vh;
+    width: 90vw;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-gap: 1rem;
+}
+.info-container{
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    justify-content: start;
+}
+.feature-name{
+    display: grid;
+    align-content: center;
+    color: gray;
+
+    font-size: 1rem;
+
+}
+.feature-moto{
+
+    display: grid;
+    align-content: center;
+    font-size: 2.5rem;
+}
+.feature-image{
+    background-color: orangered;
+    margin: 1rem 1rem 1rem 0rem;
+    border-radius: 1rem;
+}
+
+/* Song list */
+
+.recent{
+    height: 60vh;
+    margin-bottom: 1rem;
+
+}
+.recent-container{
+    height: 50vh;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1.5fr;
+    width: 100vw;
+    /* margin-top: 1rem;
+    margin-bottom: 10rem; */
+}
+.recent-info{
+    display: grid;
+    grid-template-columns: 8fr 1fr;
+    justify-content: start;
+    align-content: center;
+}
+.re-container{
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+/* ----re--- means recent */
+.name-re{
+    display: grid;
+    justify-content: start;
+    align-content: center;
+    color: gray;
+
+}
+.name-re1{
+    display: grid;
+    justify-content: start;
+    align-content: center;
+}
+.recent-icon{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+/* .h-song-container{
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    width: 40vw;
+    background-color: red;
+}
+.h-cover-image{
+    border-radius: 1rem;
+}
+.h-song-cover-image{
+
+    border-radius: 2rem;
+
+}
+.h-song-info{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    justify-content: start;
+    align-content: center;
+}
+.h-song-name{
+    justify-self: center;
+    font-size: 3vh;
+    display: grid;
+    justify-content: start;
+    align-content: center;
+}
+.h-artist-name{
+    justify-self: center;
+    font-size: 0.8rem;
+    color: gray;
+    display: grid;
+} */
+
+
+.h-recent-song-container{
+    height: 30vh;
+    width: 100vw;
+    /* transform: translateX(-0.5rem); */
+}
+.h-recent-songs{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+}
+.h-recent-indivisual-songs{
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    height: 100%;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+.h-recent-song-cover{
+    border-radius: 1rem;
+    width: 40vw;
+    height: 100%;
+}
+.h-recent-song-info{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    justify-content: start;
+    align-content: center;
+}
+.h-recent-song-info > div{
+    align-self: center;
+}
+.h-recent-song-name{
+    font-weight: bolder;
+    font-size: 1.2rem;
+    display: block;
+    /* flex-direction: row; */
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.h-recent--song-artist-name{
+    font-weight: bolder;
+    /* font-size: 1rem; */
+    color: gray;
+    display: block;
+    /* flex-direction: row; */
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+.view-all{
+    display: grid;
+    justify-content: end;
+    align-content: center;
+    font-size: 2rem;
+
+}
+
+               /* Get more */
+.get-more{
+    display: grid;
+    grid-template-rows: 2fr 4fr 1fr;
+    height: 50vh;
+
+}
+.float-text-container{
+    display: grid;
+    grid-template-rows: 1fr 2fr 2.5fr;
+}
+.get-flo{
+    color: gray;
+}
+.flo{
+    font-size: 2rem;
+}
+.floating-lyrics{
+    color: gray;
+}
+.pic-div{
+
+}
+.open-float{
+    display: grid;
+    justify-content: end;
+
+}
+
